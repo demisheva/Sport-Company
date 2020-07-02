@@ -25,11 +25,11 @@
         margin: 1%;
     }
 
-    .news, .about-us, .contacts {
+    .news-block, .about-us-block, .contacts-block {
         max-width: initial
     }
 
-    .about-us {
+    .about-us-block {
         margin: 3rem 0;
     }
 
@@ -110,9 +110,11 @@
         transform: rotate(-45deg);
         top: 0;
     }
+
     .nav-list{
         display: none;
     }
+
     .nav-list.open {
         display: flex;
         flex-direction: column;
