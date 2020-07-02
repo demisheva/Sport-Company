@@ -19,23 +19,40 @@
     .nav-item a {
         font-size: 1.2rem;
     }
+
     .featured-products, .new-item {
         max-width: 98%;
         margin: 1%;
     }
+
     .news, .about-us, .contacts {
         max-width: initial
     }
+
     .about-us {
         margin: 3rem 0;
     }
+
+    .product{
+        max-width: 48%;
+        margin: 3vh 0;
+      }
+
+    .modal-content {
+        width: 100%;
+      }
+
+      .gallery-about-us img{
+        width: 47%;
+      }
+
 }
 
 @media only screen and (max-width: 600px) {
     .container{
         margin: 0;
         padding: 5vh;
-        width: 100vw;
+        width: 100%;
     }
     .company-logo{
         max-height: 2rem;
@@ -64,13 +81,12 @@
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         background: var(--text-secondary-color);
-      }
-
+    }
 
     .menu-btn-burger::before {
         content: '';
         top: -0.55rem;
-      }
+    }
       
     .menu-btn-burger::after {
         content: '';
@@ -104,5 +120,21 @@
 
     .footer-nav-list{
         display: none;
+    }
+
+    .product{
+        max-width: 98%;
+        margin: 2vh 0;
+    }
+
+    .gallery-about-us img{
+        width: 100%;
+    }
+    
+    .contacts-item,
+    iframe{
+        height: 100%;
+        width: 90vw;
+        margin: 3% 0;
     }
 }

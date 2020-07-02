@@ -17,40 +17,34 @@ function toggleMunu() {
     }
 }
 
-const sliderBtnRight = document.querySelector('.navigation .fa-arrow-circle-right');
-const sliderBtnLeft = document.querySelector('.navigation .fa-arrow-circle-left');
-let allSlidesList = document.querySelectorAll(".slides figure");
+const collapsapsible = document.querySelectorAll(".news-header");
 
-setInterval(showRightSlid, 5000);
+console.log(collapsapsible);
 
-sliderBtnRight.addEventListener('click', showRightSlid);
-sliderBtnLeft.addEventListener('click', showLefttSlid);
-
-function showRightSlid() {
-    for (let index = 0; index < allSlidesList.length; index++) {
-        if (allSlidesList[index].classList.contains("show-item")) {
-            if (allSlidesList[index + 1] == allSlidesList[allSlidesList.length]) {
-                allSlidesList[0].classList.add("show-item");
-            } else {
-                allSlidesList[index + 1].classList.add("show-item");
-            }
-            allSlidesList[index].classList.remove("show-item");
-            break;
+collapsapsible.forEach(element =>
+    element.addEventListener('click',
+        function () {
+            element.classList.toggle('active');
         }
-    }
+    )
+)
+
+
+let galleryAboutUs = document.querySelectorAll('.gallery-about-us img')
+let modal = document.getElementById("modal-img");
+let image = document.getElementById("image");
+let closeBtn = document.getElementsByClassName("close")[0];
+
+
+galleryAboutUs.forEach(element => {
+    element.addEventListener('click', showBigImage)
+})
+
+function showBigImage() {
+    modal.style.display = "flex";
+    image.src = this.src;
 }
 
-function showLefttSlid() {
-    for (let index = 0; index < allSlidesList.length; index++) {
-        if (allSlidesList[index].classList.contains("show-item")) {
-            if (index - 1 == -1) {
-                allSlidesList[allSlidesList.length - 1].classList.add("show-item");
-            } else {
-                allSlidesList[index - 1].classList.add("show-item");
-            }
-            allSlidesList[index].classList.remove("show-item");
-            break;
-        }
-    }
+closeBtn.onclick = function () {
+    modal.style.display = "none";
 }
-

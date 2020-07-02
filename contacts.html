@@ -7,6 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <title>Minimal website design (flexbox)</title>
 </head>
@@ -15,10 +16,10 @@
     <div class="container">
         <header>
             <div class="header-logo">
-                <div class="logo">
+                <a class="logo" href="index.html">
                     <img class="company-logo" src="images/logo.png" alt="Logo">
                     <p class="company-name">Company Name</p>
-                </div>
+                </a>
                 <div class="company-slogan">
                     <p class="slogan">Lorem ipsum dolor sit amet</p>
                     <p class="subslogan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, modi.
@@ -49,7 +50,34 @@
             </nav>
         </header>
         <main>
+            <section class="contacts">
+                <h1>Our Contacts</h1>
 
+                <div class="contacts-item">
+                    <h3>Contact Us</h3>
+                    <a href="tel:+00000000" class="phone">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        +00 000 000
+                    </a>
+
+                    <a href="mailto:aaa@aaa" class="email">
+                        <i class="far fa-envelope" aria-hidden="true"></i>
+                        aaa@aaaa
+
+                    </a>
+
+                    <a href="http://https://www.google.es/maps/" target="_blank" rel="noopener noreferrer"
+                        class="address">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                        address address address address address address address address address address
+                    </a>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102341.62536173059!2d-4.519307108077927!3d36.718339089077624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7259c44fdb212d%3A0x6025dc92c9ca32cf!2zTcOhbGFnYQ!5e0!3m2!1sen!2ses!4v1593687722162!5m2!1sen!2ses"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="footer-logo">

@@ -7,6 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <title>Minimal website design (flexbox)</title>
 </head>
@@ -15,10 +16,10 @@
     <div class="container">
         <header>
             <div class="header-logo">
-                <div class="logo">
+                <a class="logo" href="index.html">
                     <img class="company-logo" src="images/logo.png" alt="Logo">
                     <p class="company-name">Company Name</p>
-                </div>
+                </a>
                 <div class="company-slogan">
                     <p class="slogan">Lorem ipsum dolor sit amet</p>
                     <p class="subslogan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, modi.
@@ -49,7 +50,26 @@
             </nav>
         </header>
         <main>
+            <section class="about-us">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, deleniti. Dolore vitae veritatis
+                    asperiores recusandae officia illum dolor voluptate repellendus. Voluptas tempora nobis earum natus
+                    hic velit aperiam eveniet perferendis? Modi sapiente totam architecto amet laboriosam, est quam
+                    assumenda earum sit, suscipit excepturi iste impedit officiis, omnis sint nam obcaecati!</p>
+                <div class="gallery-about-us">
+                    <img src="/images/news-img-1.jpg" alt="">
+                    <img src="/images/news-img-2.jpg" alt="">
+                    <img src="/images/news-img-5.jpg" alt="">
+                    <img src="/images/news-img-4.jpg" alt="">
+                    <img src="/images/news-img-3.jpg" alt="">
+                </div>
+            </section>
 
+            <!-- The Modal for gallery -->
+            <div id="modal-img" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="image">
+            </div>
         </main>
         <footer>
             <div class="footer-logo">
